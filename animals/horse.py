@@ -2,8 +2,8 @@ from animals import Animal
 from movements import Walking
 from capabilities import Scheduleable
 
-class Donkey(Animal, Walking, Scheduleable):
+class Horse(Animal, Walking, Scheduleable):
     def __init__(self, name, shift):
-        Animal.__init__(self, name, "Donkinalia", "cans")
-        Walking.__init__(self, 100, 4)
+        Animal.__init__(self, name, 'Horsealia', 'crabapple')
+        Walking.__init__(self, 500, 4)
         Scheduleable.__init__(self, shift)
