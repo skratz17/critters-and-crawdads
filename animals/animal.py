@@ -12,6 +12,9 @@ class Animal:
 
         Animal.next_chip_number += 1
 
+    def __str__(self):
+        return f"{self.name}, family {self.species}"
+
     def feed(self):
         print(f"{self.name} was fed {self.food} on {date.today().strftime('%m/%d/%Y')}")
 
